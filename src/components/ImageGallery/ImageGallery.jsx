@@ -55,7 +55,11 @@ export class ImageGallery extends Component {
           images: [...prevState.images, ...response.hits],
           status: 'resolve',
         }));
+        if (response.hits.length === 0) {
+        this.props.loadMoreBtn.disabled = true;
+      }
       })
+
       .catch(error => this.setState({ status: 'rejected' }));
   };
 
