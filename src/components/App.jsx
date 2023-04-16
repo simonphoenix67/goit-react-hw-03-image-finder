@@ -36,7 +36,8 @@ export class App extends Component {
 
 
   render() {
-    const { modalImg, showModal ,page} = this.state;
+    const { modalImg, showModal, page } = this.state;
+    // const LoadBtn = images.length > 0;
     return (
       <>
         <Searchbar getInputValue={this.getInputValue}/>
@@ -46,5 +47,4 @@ export class App extends Component {
     )
   }
 }
-
 
