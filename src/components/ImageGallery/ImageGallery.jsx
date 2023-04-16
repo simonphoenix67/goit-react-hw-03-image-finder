@@ -4,6 +4,8 @@ import {ImageGalleryItem} from '../ImageGalleryItem/ImageGalleryItem';
 import {Loader} from '../Loader/Loader';
 import {Button} from '../Button/Button';
 
+// 4
+
 export class ImageGallery extends Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired,

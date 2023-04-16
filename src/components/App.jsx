@@ -35,7 +35,6 @@ export class App extends Component {
 
   render() {
     const { modalImg, showModal ,page} = this.state;
-
     return (
       <>
         <Searchbar getInputValue={this.getInputValue}/>
